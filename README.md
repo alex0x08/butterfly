@@ -16,3 +16,16 @@ Basically it does:
 ```
 but with [Javassist](https://www.javassist.org/) and Java [Instrumentation API](https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html).
 
+# Compile
+You need Apache Maven >3.5 installed, to compile just run:
+```
+mvn clean package
+```
+After that, in "target" folder should be "butterfly.jar"
+
+# Use
+
+Attach this agent and run as:
+```
+java -javaagent:</full/path/to/butterfly.jar> -jar your-spring-boot-app.jar
+```

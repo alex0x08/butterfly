@@ -1,6 +1,9 @@
 # Butterfly
 Simple way to temporary disable password authentication for ordinary Spring Boot apps.
 
+Full article (in russian) [here](https://blog.0x08.ru/knife-for-jira-bypass-password-check) , [Habr](https://habr.com/ru/articles/823100/). 
+
+
 This is my small "single class" Java Agent which disables password-based authentication, without touch application sources.
 So when agent attached, you can easily authenticate in your app by using any text as 'password'.
 
@@ -29,3 +32,4 @@ Attach this agent and run as:
 ```
 java -javaagent:</full/path/to/butterfly.jar> -jar your-spring-boot-app.jar
 ```
+
